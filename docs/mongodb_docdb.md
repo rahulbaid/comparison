@@ -1,7 +1,6 @@
 # MongoDB vs DocumentDB
 
 ## Single Sentence Description
----------------------------
 *From ChatGPT,*
 
 MongoDB is a NoSQL, document-oriented database that provides high performance, scalability, and flexibility by storing data in JSON-like BSON (Binary JSON) documents, offering dynamic schema, and supporting a rich set of query capabilities.
@@ -10,7 +9,6 @@ Amazon DocumentDB is a fully managed NoSQL database service that is compatible w
 
 
 ## DB Showdown
----------------------------
 
 > System: M3 MacBook Pro 2023, 16GB RAM
 > OS: MacOS Sonoma 14.3
@@ -56,4 +54,4 @@ Specifying the `_id` field for each document before each test iteration (`bulk_w
 
 We can see that while the performance of the databases is comparable (though MongoDB is a bit faster) for insert operations without specifying the `_id` field, DocumentDB is significantly slower than MongoDB when the `_id` field is specified. 
 
-Other settings can be tweaked to improve write performance such  as `ordered`, `write_concern`, `bypass_document_validation`. However, I have not tested them yet.
+Other settings can be tweaked to improve write performance such as `ordered`, `write_concern`, `bypass_document_validation`. However, I have not tested them yet.
