@@ -11,10 +11,15 @@ Amazon DocumentDB is a fully managed NoSQL database service that is compatible w
 ## DB Showdown
 
 > System: M3 MacBook Pro 2023, 16GB RAM
+> 
 > OS: MacOS Sonoma 14.3
+> 
 > Python: 3.11.7
+> 
 > Script: scripts/docdb.py
+> 
 > MongoDB: 4.2.23 Community, t3a.small, 2vCPUs, 2G Memory, up to 2,085 EBS burst bandwidth (Mbps), Up to 5Gbps N/w
+> 
 > DocumentDB: 5.0.0 Community, db.t4g.medium, 2vCPUs, 4G Memory, up to 2,085 EBS burst bandwidth (Mbps), Up to 5Gbps N/w
 
 Here, we are **only testing the write performance** of the 2 databases. All the tests were run over 3 iterations and the average was taken. `retryWrites` has been set to `false` for DocumentDB client. Unless otherwise mentioned, all other settings of the `pymongo` driver are kept as default. The results have been shared below.
